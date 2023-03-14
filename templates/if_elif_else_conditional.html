@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF-ELIF-ELSE CONDITIONAL</title>
+</head>
+<body>
+    <center>
+    <h1>IF-ELIF-ELSE CONDITIONAL</h1>
+    {% if a > b and a > c %}
+        <h1>Inside if Block</h1>
+        <h1>a : {{a}} is Max</h1>
+    {% elif b > c %}
+        <h1>Inside elif Block</h1>
+        <h1>b : {{b}} is Max</h1>
+    {% else %}
+        <h1>Inside else Block</h1>
+        <h1>c : {{c}} is Max</h1>
+    {% endif %}
+</center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NESTED-IF-ELSE</title>
+</head>
+<body>
+    <center>
+        <h1>NESTED-IF-ELSE</h1>
+        {% if a > b %}
+            {% if a > c %}
+                <h1>Inside inner if Block</h1>
+                <h1>a : {{a}} is Max</h1>
+            {% else %}
+                <h1>Inside inner else Block</h1>
+                <h1>c : {{c}} is Max</h1>
+            {% endif %}
+        {% else %}
+            {% if b > c %}
+                <h1>Inside inner if of else Block</h1>
+                <h1>b : {{b}} is Max</h1>
+            {% else %}
+                <h1>Inside inner else of else Block</h1>
+                <h1>c : {{c}} is Max</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
